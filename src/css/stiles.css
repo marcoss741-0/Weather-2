@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url(../../assets/bg.jpg);
+  background: url(../../assets/mountain-9380557.jpg);
   background-size: cover;
   background-position: center;
   height: 100dvh;
@@ -33,8 +33,8 @@ body::before {
 }
 
 .main-container {
-  width: 350px;
-  height: 500px;
+  width: 450px;
+  height: 550px;
   z-index: 1;
   background: linear-gradient(
     90deg,
@@ -110,6 +110,7 @@ body::before {
 .current-date {
   text-align: end;
   font-weight: 400;
+  text-transform: capitalize;
 }
 
 .weather-summary-container {
@@ -146,6 +147,7 @@ body::before {
   gap: 15px;
   overflow: scroll;
   padding-bottom: 12px;
+  height: 200px;
 }
 
 .forecast-item-container::-webkit-scrollbar {
@@ -163,11 +165,14 @@ body::before {
 }
 
 .forecast-item {
-  min-width: 70px;
+  min-width: 80px;
   background: rgb(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
   padding: 10px;
   align-items: center;
   border-radius: 12px;
@@ -180,13 +185,14 @@ body::before {
 }
 
 .forecast-item-img {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 .forecast-item-description {
   font-size: 10px;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .section-message {
